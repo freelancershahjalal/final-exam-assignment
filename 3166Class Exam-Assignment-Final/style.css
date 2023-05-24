@@ -1,0 +1,797 @@
+/* #913bff
+#00284E
+#010d4c
+#ffffff
+#0066ff
+#0043a8 */
+
+/* font-family: 'Be Vietnam Pro', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* ===============Section Padding Styling Start=============== */
+.sp{
+    padding: 100px 0px;
+}
+/* ===============Section Padding Styling End=============== */
+
+.max-width{
+    max-width: 100%;
+    margin:  0 auto;
+    padding: 0px 20px;
+}
+.container-width{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+body, h1, h2, h3, h4, h5, h6, p, strong, span, a{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+strong{
+    color: #010d4c;
+}
+/* ===============Default Button Styling Start=============== */
+.default-btn{
+    display: inline-block;
+    padding: 13px 20px;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;    
+}
+.default-btn:hover{
+    background-color: #0043a8;
+    color: #fff;
+}
+/* ===============Default Button Styling End=============== */
+
+/* ===============Section title Styling Start=============== */
+section .title{
+    text-align: center;
+}
+section .title h1{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+section .title p{
+    line-height: 30px;
+    margin-top: 15px;
+}
+input.menu-toggle, i#humburger-check {
+    display: none;
+}
+
+/* ================Section title Styling End================ */
+
+/* ===============Header Section Styling Start=============== */
+.header-section{
+    background: #ffffff;
+    padding: 15px 0px;
+}
+.header-section .max-width{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header-logo .logo-content{
+    font-size: 40px;
+    font-weight: 500;
+    color: #010d4c;
+}
+.header-menu{
+    width: 45%;
+}
+.header-menu ul{
+    display: inline-block;
+    align-items: center;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin: 15px;
+    
+}
+.header-menu ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #010d4c;
+    list-style: none;
+    transition: all 0.3s ease;
+    position: relative;
+    /* padding: 10px; */
+}
+.header-menu ul li a:hover{
+    color: #913bff;
+}
+.header-menu ul li a::after{
+   content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background: #913bff;
+    left: 0;
+    bottom: -4px;
+    transition: all 0.3s ease;    
+}
+.header-menu ul li a:hover::after{    
+    width: 100%;
+}
+.header-contact{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+}
+.header-contact-content{
+    font-size: 18px;
+    font-weight: 500;
+}
+.header-contact h4{
+    margin-right: 10px;
+    color: #010d4c;
+}
+.header-contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+.header-contact-content a{
+    text-decoration: underline;
+    color: #0066ff;
+    transition: all 0.3s ease;
+}
+.header-contact-content a:hover{
+    color: #0043a8;
+}
+/* ===============Header Section Styling End=============== */
+
+/* ===============Banner Section Styling Start=============== */
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+.banner .banner-content h1{
+    font-size: 60px;
+    font-weight: 400;    
+}
+.banner .banner-content p{
+    margin: 20px;
+    color: #a1a0a0;
+}
+.banner .banner-content .default-btn{
+    margin-top: 20px;
+}
+/* ===============Banner Section Styling End=============== */
+
+/* ===============User Section Styling Start=============== */
+.user .user-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.user-content{
+    width: calc(33.33% - 20px);
+}
+.user .user-items .user-content h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #010d4c;
+}
+/* ================User Section Styling End================ */
+
+/* =============Products Section Styling Start============= */
+.product{
+    background: #cecece;
+}
+.product .title{
+    margin-bottom: 50px;
+}
+.product .title h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: #a09d9d;
+    padding: 20px 0pc;
+
+}
+.product .title h1{
+    color: #010d4c;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.product-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.product-card{
+    width: calc(33% - 20px);
+    transition: .4s ease-in-out;    
+}
+.product-box{    
+    height: 320px;
+    background: #ffffff;
+    border-radius: 6px 6px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.product-box img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;   
+    border-radius: 6px 6px 0px 0px;
+}
+.corner-icon{
+    height: 100px;
+    width: 100px;
+    background-color: #913bff;
+    position: absolute;
+    border-radius: 50%;
+    right: -40px;
+    top: 85%;
+    text-align: left;
+    transform: scale(0);
+    transition: .4s;
+    transform-origin: bottom right;
+}
+.corner-icon i{
+    color: #ffffff;
+    line-height: 62px;
+    margin-left: 30px;
+    transform: scale(0);
+    transition: .6s ease-in-out;   
+}
+.product-card:hover{
+    transform: translateY(-10px);
+}
+.product-card:hover .corner-icon{
+    transform: scale(1);
+}
+.product-card:hover .corner-icon i{
+    transform: scale(1);    
+}
+.product-content{
+    padding: 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 0px 0px 6px 6px;
+}
+.product-content h5{
+    color: #913bff;
+    margin-bottom: 10px;
+    font-size: 18px; 
+}
+.product-content a{
+    transition: all 0.3s ease;
+}
+.product-content a:hover{
+    color: #913bff;
+}
+/* ===============Products Section Styling End=============== */
+
+/* ===============Feature Section Styling Start============== */
+.feature-items{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feature-card{
+    width: calc(25% - 20px);
+    transition: all 0.3s ease-in-out;
+}
+.features-box {
+    width: 100%;
+    height: 280px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 20px 8px rgba(0,67,168, 0.1);
+    border-radius: 4px;
+}
+.feature-card:hover{
+    transform: translateY(-10px);
+}
+.features-box i{
+    font-size: 30px;
+    color: #913bff;
+}
+.features-box h3 {
+    margin: 20px 0px;
+    color: #010d4c;
+}
+.features-box p{
+    line-height: 30px;
+    margin: 20px 0px;
+}
+/* ===============Feature Section Styling End============== */
+
+/* ============Portfolio Section Styling Start============= */
+.portfolio{
+    width: 100%;   
+    height: 100%;
+    background-image: url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.portfolio-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio-items .column{    
+}
+.portfolio-items .left{
+    width: 45%;
+    padding-right: 50px;
+}
+.portfolio-items .left h3{    
+    font-size: 20px;
+    font-weight: 500;
+}
+.portfolio-items .left h1{
+    color: #010d4c;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+.portfolio-items .left p{
+    line-height: 30px;
+}
+.portfolio-items .right{
+    width: 55%;
+}
+/* ===============Portfolio Section Styling End=============== */
+
+/* ========Recent Product Items section Styling Start========= */
+.recent-products{
+    background: #cecece;    
+}
+.product-title h3{ 
+    color: #000;
+}
+.recent-product-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.recent-product-card{
+    width: calc(33% - 20px);
+    margin-bottom: 30px;
+    transition: .4s ease-in-out;    
+}
+.recent-product-box{    
+    height: 320px;
+    background: #ffffff;
+    border-radius: 6px 6px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.recent-product-box img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;   
+    border-radius: 6px 6px 0px 0px;
+}
+.corner-icon{
+    height: 100px;
+    width: 100px;
+    background-color: #913bff;
+    position: absolute;
+    border-radius: 50%;
+    right: -40px;
+    top: 85%;
+    text-align: left;
+    transform: scale(0);
+    transition: .4s;
+    transform-origin: bottom right;
+}
+.corner-icon i{
+    color: #ffffff;
+    line-height: 62px;
+    margin-left: 30px;
+    transform: scale(0);
+    transition: .6s ease-in-out;   
+}
+.recent-product-card:hover{
+    transform: translateY(-10px);
+}
+.recent-product-card:hover .corner-icon{
+    transform: scale(1);
+}
+.recent-product-card:hover .corner-icon i{
+    transform: scale(1);    
+}
+.recent-product-content{
+    padding: 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 0px 0px 6px 6px;
+}
+.recent-product-content h5{
+    color: #913bff;
+    margin-bottom: 10px;
+    font-size: 18px; 
+}
+.recent-product-content a{
+    transition: all 0.3s ease;
+}
+.recent-product-content a:hover{
+    color: #913bff;
+}
+/* =========Recent Product Items section Styling End========== */
+
+/* ============Pricing Table Section Styling Start============ */
+.pricing-table{    
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.pt-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;   
+    margin-top: 50px;
+}
+.pt-card{
+    width: calc(33.33% - 20px);
+}
+.pt-box{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 8px rgba(0,67,168, 0.1);   
+}
+.pt-box h3{
+    color: #ded6cf;
+    padding: 20px;
+}
+.pt-box.active{
+    background: #0066ff;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+.pt-box.active h1{
+    color: #ffffff;
+}
+.pt-box.active h3{
+    color: #ffffff;
+}
+.pt-box h1{
+    color: #010d4c;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+}
+.pt-box .rate::before {
+    content: "$";
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+    top: 8px;
+    left: -33px;
+    font-size: 30px;
+}
+.pt-box .rate1::before {
+    content: "$";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 8px;
+    left: -60px;
+    font-size: 30px;
+}
+.pt-box .rate2::after {
+    content: "99";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 8px;
+    right: -65px;
+    font-size: 30px;
+}
+.pt-box ul{
+    margin: 30px 0px;
+}
+.pt-box ul li{
+    line-height: 40px;
+}
+.pt-box .default-btn {
+    padding: 10px 70px;
+    border-radius: 30px;
+    margin: 30px;
+    background: #ffffff;
+    color: #0066ff;
+    border: 1px solid #0066ff;
+    transition: all 0.3s ease;
+}
+.pt-box .default-btn:hover{
+    background: #0066ff;
+    color: #ffffff;
+}
+.pt-box.active .default-btn:hover{
+    background: #0043a8;
+    border: 1px solid #fff;
+}
+.pt-content {
+    padding: 70px 0px;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+.pt-content p{
+    line-height: 30px;
+}
+/* ======+======Pricing Table Section Styling End+============ */
+/* ===============Client Section Styling Start=============== */
+.client{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.client-content {
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 50px;
+    width: 900px;
+    margin: auto;
+    border-radius: 20px;
+}
+.client-content i{
+    font-size: 50px;
+}
+.client-content p {
+    font-size: 23px;
+    color: #c6c6c6;
+    line-height: 35px;
+    padding: 30px 0px;
+}
+.client-content h3 {
+    font-size: 23px;
+}
+.client-content h6{
+    color: #4d4d4d;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.pagination-bullet{
+    text-align: center;
+    margin-top: 50px;
+}
+.pagination-bullet span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #c6c6c6;
+    border-radius: 50%;
+    margin: 3px;
+}
+.pagination-bullet .s-one{
+    background: #4d4d4d;
+}
+/* ===============Client Section Styling End=============== */
+
+/* =============Join Now Section Styling Start============= */
+.community-join{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px 0px;
+}
+.community-join-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+}
+.community-join-items .column{
+    width: calc(50% - 20px);
+}
+.community-join-items .left{}
+.community-join-items .left h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+.community-join-items .left p{
+    color: #c6c6c6;
+}
+.community-join-items .right{
+    text-align: right;
+}
+.community-join-items .right .default-btn{
+    background: #ffffff;
+    color: #4d4d4d;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.community-join-items .right .default-btn:hover{
+    background-color: rgba(198, 192, 192, 0.553);
+    color: #fff;
+}
+.community-join-items .right .default-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    bottom: 0;   
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;    
+    background-color: #fff;
+    z-index: -1;
+    transform: scale(0);
+    transform-origin: center center;
+    transition: all 0.6s ease-in-out;    
+}
+.community-join-items .right .default-btn:hover::before{
+    transform: scale(1);
+    color: #fff;
+    background: none;
+}
+/* ==============Join Now Section Styling End============== */
+
+/* ==============News Letter Section Styling Start============== */
+.news-letter{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;    
+}
+.news-letter-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+.news-letter-items .column{
+    width: calc(50% - 20px);
+}
+.news-letter-items .left{}
+.news-letter-items .left h4{
+    font-size: 22px;
+    line-height: 35px;
+}
+.news-letter-items .right{}
+.news-letter-items .right form{
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.news-letter-items .right .text-input{
+    width: 428px;
+    height: 50px;
+    border: none;    
+    font-size: 18px;
+    outline: none;    
+}
+.btn-animate{
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #0066ff;
+    color: #fff;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.btn-animate:hover {
+    background-color: #0043a8;
+}
+.btn-animate::before{
+    content: "";
+    height: 45px;
+    width: 45px;
+    background-color: #faf8fc;
+    border-radius: 50%;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+@keyframes animate{
+    0%   {
+        transform: scale(0);
+        opacity: 1;
+    }
+    25%  {
+        transform: scale(.6);
+        opacity: .7;
+    }
+    50%  {
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+.btn-animate:hover.btn-animate::before{
+    visibility: visible;
+    opacity: 0;
+    animation:animate .5s ease-in-out;
+}
+/* ===============Footer Section Styling Start=============== */
+
+footer{
+    padding: 20px 0px;
+    color: #0043a8;
+}
+/* ===============Footer Section Styling Start=============== */
+
+/* ==============News Letter Section Styling End============== */
